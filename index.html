@@ -10,51 +10,53 @@
 
       <style media="screen">
       .home {
-        background: url('http://www.react-school.com/images/content/bg/1.jpg');
-        height:500px;
-        background-size: cover;
-      }
-      .centered{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height:100%;
-      }
+  background: url('http://www.react-school.com/images/content/bg/1.jpg');
+  height:500px;
+  background-size: cover;
+}
+.centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:100%;
+}
 
-      .heading {
-        front-sixe: 50px;
-        color: black;
-        background: pink;
-      }
+.heading {
+  front-sixe: 50px;
+  color: black;
+  background: pink;
+}
 
-      .about-me{
-        background: pink;
-        height: 500px;
-      }
+.about-me{
+  background: pink;
+  height: 500px;
+}
 
-      .my-strong-sides{
-        height:400px;
-        text-align: center;
-        padding-top: 25px;
-        font-size:25px;
-      }
+.my-strong-sides{
+  height:400px;
+  text-align: center;
+  padding-top: 25px;
+  font-size:25px;
+}
 
-      .glyphicon{
-        font-size: 30px;
-        color: pink;
-      }
+.glyphicon{
+  font-size: 30px;
+  color: pink;
+}
 
-      .carousel-caption{
+.nav{
+  position: fixed;
+  top: 0;
+  z-index:1000;
+  background: white;
+}
 
-      }
+.carousel-caption{
+  font-size: 25px;
+  color: #e1e8de;
+}
 
-      .nav{
-        position: fixed;
-        top: 0;
-        z-index:1000;
-        background: white;
-      }
       </style>
 
 
@@ -62,7 +64,7 @@
 
 <body>
 
-  <div class="home" id="home">
+ <div class="home" id="home">
   <div class="centered">
     <ul class="nav nav-pills">
   <li role="presentation" class="active"><a href="#home">Home</a></li>
@@ -90,46 +92,54 @@
   <div class="row">
   <div class="col-md-4">
     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-    <p1>I am cool!</p1>
+     <p> You can search something about me on Facebook! Where are so many interesting people, also their pets... and parents... and friends!</p1>
     </div>
   <div class="col-md-4">
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-    <p1>I am You!</p1>
+    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+    <p>Time after time I am watching, how the phone becomes the one of the best human friends... Because of the sill getting informtion there ever we are.</p>
     </div>
   <div class="col-md-4">
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-    <p1>I am here!</p1>
+    <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+    <p>Guess we should to learn the basic before start to working with huge programms and profesional programmers, so I know who can help us :)</p>
   </div>
+</div>
 </div>
 
 <div class="pics" id="pics">
-  <div class="centered">
+  <div class="centered">    
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://wallpaperstock.net/turtle_wallpapers_25349_1920x1080.jpg" alt="picture 1">
+      <img src="https://wallup.net/wp-content/uploads/2016/01/12007-fantasy_art-tiger-animals.jpg">
       <div class="carousel-caption">
-        Pictures
+        Tiges are the best!
       </div>
     </div>
     <div class="item">
-      <img src="http://davidszervereiinfo.pe.hu/wallpapers/1920x1080-Wallpaper-HD-05-Download.jpg" alt="...">
+      <img src="http://walldiskpaper.com/wp-content/uploads/2015/11/Digital-Astronaut-1920x1080-Wallpaper-Background.jpg">
       <div class="carousel-caption">
-        ...
+        What do you know about us?
       </div>
     </div>
     <div class="item">
-      <img src="http://davidszervereiinfo.pe.hu/wallpapers/1920x1080-Wallpaper-HD-05-Download.jpg" alt="...">
+      <img src="http://uspstrackingtool.com/wp-content/uploads/2018/03/Deer-Baby-Cute-Animal-Wallpaper.jpg" >
       <div class="carousel-caption">
-        ...
+        Hi!
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2015/12/Asia-wallpaper-6.jpg" >
+      <div class="carousel-caption">
+       I am on the boat! Just belive me.
       </div>
     </div>
   </div>
@@ -148,10 +158,8 @@
 </div>
 
 <div class="contacts" id="contacts">
-  <p1>
-    We are here!
-  </p1>
   <div class="centered">
+     We are here! Welcome! 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.144962953097!2d26.50986781543462!3d55.87749998983576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c295c4d55937c3%3A0xbaf6523b519d4320!2sCietok%C5%A1%C5%86a+iela+73-71%2C+Daugavpils%2C+LV-5401!5e0!3m2!1sen!2slv!4v1520082686380" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
